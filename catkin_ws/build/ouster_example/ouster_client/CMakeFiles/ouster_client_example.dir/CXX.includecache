@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nvidia/catkin_ws/src/ouster_example/ouster_client/include/ouster/os1.h
+cstdint
+-
+memory
+-
+string
+-
+vector
+-
+
+/home/nvidia/catkin_ws/src/ouster_example/ouster_client/include/ouster/os1_packet.h
+array
+-
+cmath
+-
+cstdint
+-
+cstring
+-
+
+/home/nvidia/catkin_ws/src/ouster_example/ouster_client/src/main.cpp
+cstdint
+-
+cstring
+-
+iomanip
+-
+iostream
+-
+ouster/os1.h
+/home/nvidia/catkin_ws/src/ouster_example/ouster_client/src/ouster/os1.h
+ouster/os1_packet.h
+/home/nvidia/catkin_ws/src/ouster_example/ouster_client/src/ouster/os1_packet.h
+

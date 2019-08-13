@@ -1,0 +1,5 @@
+struct  lidar_pose_t
+{
+    double p_lidar[3]; 
+    double lidar_quaternion[4];
+}

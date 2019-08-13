@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -O3 -DNDEBUG  -rdynamic CMakeFiles/ouster_client_example.dir/src/main.cpp.o  -o /home/nvidia/catkin_ws/devel/lib/ouster_client/ouster_client_example /home/nvidia/catkin_ws/devel/lib/libouster_client.a -ljsoncpp 
