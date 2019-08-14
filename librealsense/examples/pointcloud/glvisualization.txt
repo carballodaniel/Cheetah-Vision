@@ -22,6 +22,11 @@ struct worldmap
     double map[1000][1000];
 };
 
+struct gl_worldmap
+{
+    GLfloat points[1000000][3];
+};
+
 struct rotMat_t
 {
     double R[3][3];
@@ -32,34 +37,61 @@ int CELLS_PER_M = 100;
 worldmap world_heightmap;
 lidar_pose_t lidar_pose;
 lcm::LCM vision_lcm;
+gl_worldmap glheightmap;
 
-lidar_pose_t poseFromRPY(double x, double y, double z, 
-							double yaw, double pitch, double roll) // yaw (Z), pitch (Y), roll (X)
+
+// Handles all the OpenGL calls needed to display the point cloud
+void draw_heightmap(float width, float height, glfw_state& app_state, gl_worldmap& glheightmap)
 {
-    // Abbreviations for the various angular functions
-    double cy = cos(yaw * 0.5);
-    double sy = sin(yaw * 0.5);
-    double cp = cos(pitch * 0.5);
-    double sp = sin(pitch * 0.5);
-    double cr = cos(roll * 0.5);
-    double sr = sin(roll * 0.5);
 
-    lidar_pose_t pose;
-	pose.p_lidar[0] = x;
-	pose.p_lidar[1] = y;
-	pose.p_lidar[2] = z;
+    // OpenGL commands that prep screen for the pointcloud
+    glLoadIdentity();
+    glPushAttrib(GL_ALL_ATTRIB_BITS);
 
-    pose.lidar_quaternion[0] = cy * cp * cr + sy * sp * sr;
-    pose.lidar_quaternion[1] = cy * cp * sr - sy * sp * cr;
-    pose.lidar_quaternion[2] = sy * cp * sr + cy * sp * cr;
-    pose.lidar_quaternion[3] = sy * cp * cr - cy * sp * sr;
+    glClearColor(153.f / 255, 153.f / 255, 153.f / 255, 1);
+    glClear(GL_DEPTH_BUFFER_BIT);
 
-    return pose;
+    glMatrixMode(GL_PROJECTION);
+    glPushMatrix();
+    gluPerspective(60, width / height, 0.01f, 10.0f);
+
+    glMatrixMode(GL_MODELVIEW);
+    glPushMatrix();
+    gluLookAt(0, 0, 0, 0, 0, 1, 0, -1, 0);
+
+    glTranslatef(0, 0, +0.5f + app_state.offset_y*0.05f);
+    glRotated(app_state.pitch, 1, 0, 0);
+    glRotated(app_state.yaw, 0, 1, 0);
+    glTranslatef(0, 0, -0.5f);
+
+    glPointSize(width / 640);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, app_state.tex.get_gl_handle());
+    float tex_border_color[] = { 0.8f, 0.8f, 0.8f, 0.8f };
+    glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, tex_border_color);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, 0x812F); // GL_CLAMP_TO_EDGE
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, 0x812F); // GL_CLAMP_TO_EDGE
+    glBegin(GL_POINTS);
+
+
+
+    for (int i = 0; i < CELLS_PER_M*WORLD_SIZE*CELLS_PER_M*WORLD_SIZE; i++)
+    {
+	glVertex3fv(&glheightmap.points[i][0]);
+    }
+
+    // OpenGL cleanup
+    glEnd();
+    glPopMatrix();
+    glMatrixMode(GL_PROJECTION);
+    glPopMatrix();
+    glPopAttrib();
 }
 
 
 rotMat_t poseToRotationMatrix(lidar_pose_t pose){
-	double e0 = pose.lidar_quaternion[0]; // w x y z
+	double e0 = pose.lidar_quaternion[0];
 	double e1 = pose.lidar_quaternion[1];
 	double e2 = pose.lidar_quaternion[2];
 	double e3 = pose.lidar_quaternion[3];
@@ -123,8 +155,29 @@ void handleLCM() {
 }
 // My code - End
 
+// Helper functions
+void register_glfw_callbacks(window& app, glfw_state& app_state);
+
 int main(int argc, char * argv[]) try
 {
+
+    for (int i=0; i<1000; i++)
+	{
+		for (int j=0; j<1000; j++)
+		{
+			int ind = CELLS_PER_M*i + j;
+			glheightmap.points[ind][0] = i*0.01;
+			glheightmap.points[ind][1] = j*0.01; 
+		}
+	}
+
+    // Create a simple OpenGL window for rendering:
+    window app(1280, 720, "RealSense Pointcloud Example");
+    // Construct an object to manage view state
+    glfw_state app_state;
+    // register callbacks to allow manipulation of the pointcloud
+    register_glfw_callbacks(app, app_state);
+
 
     // Declare pointcloud object, for calculating pointclouds and texture mappings
     rs2::pointcloud pc;
@@ -141,17 +194,26 @@ int main(int argc, char * argv[]) try
     PoseHandler handlerObject; 
     vision_lcm.subscribe("LIDAR_POSE", &PoseHandler::handlePose, &handlerObject);
     std::thread lidar_sub_thread(&handleLCM);
-
-	lidar_pose_t lidar_to_camera_TF = poseFromRPY(0.28, 0.0, -0.124, 0.0, -0.417, 0.0);
     
     // My code - End
 
 
-    while (true)
+    while (app)
     {
         // Wait for the next set of frames from the camera
         auto frames = pipe.wait_for_frames();
+
+
+
+		auto color = frames.get_color_frame();
+        // For cameras that don't have RGB sensor, we'll map the pointcloud to infrared instead of color
+        if (!color)
+            color = frames.get_infrared_frame();
+        // Tell pointcloud object to map to this color frame
+        pc.map_to(color);
         auto depth = frames.get_depth_frame();
+
+
 
         // Generate the pointcloud and texture mappings
         points = pc.calculate(depth);
@@ -159,7 +221,6 @@ int main(int argc, char * argv[]) try
 		// My Code - publish pointcloud
 		rs_pointcloud_t cf_pointcloud; // 921600
 		rs_pointcloud_t wf_pointcloud; 
-		rs_pointcloud_t lf_pointcloud;
 		heightmap_t local_heightmap;
 		//std::cout<<points.size()<< std::endl;
 
@@ -186,15 +247,13 @@ int main(int argc, char * argv[]) try
 
 
 		// Publish point cloud in camera and world frames
-		//vision_lcm.publish("cf_pointcloud", &cf_pointcloud);
+		vision_lcm.publish("cf_pointcloud", &cf_pointcloud);
 		
 		std::cout<<lidar_pose.p_lidar[0]<<std::endl;
 		//std::cout<<poseToRotationMatrix(lidar_pose).R[0][0]<<std::endl;
 
-		
-		lf_pointcloud = coordinateTransformation(lidar_to_camera_TF, cf_pointcloud);
-		wf_pointcloud = coordinateTransformation(lidar_pose, lf_pointcloud);
-		//vision_lcm.publish("wf_pointcloud", &wf_pointcloud);
+		wf_pointcloud = coordinateTransformation(lidar_pose, cf_pointcloud);
+		vision_lcm.publish("wf_pointcloud", &wf_pointcloud);
 
 
 		// Move world frame point cloud into world heightmap
@@ -232,7 +291,21 @@ int main(int argc, char * argv[]) try
 
 		vision_lcm.publish("local_heightmap", &local_heightmap);
 		
+		for (int i=0; i<1000; i++)
+		{
+			for (int j=0; j<1000; j++)
+			{
+				int ind = CELLS_PER_M*i + j;
+				glheightmap.points[ind][2] = world_heightmap.map[i][j]*10; 
+			}
+		}
 		// My Code - End
+
+		// Upload the color frame to OpenGL
+		app_state.tex.upload(color);
+
+		// Draw the pointcloud
+		draw_heightmap(app.width(), app.height(), app_state, glheightmap);
 
     }
 
