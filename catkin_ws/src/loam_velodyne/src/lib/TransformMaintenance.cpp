@@ -32,7 +32,7 @@
 
 #include "loam_velodyne/TransformMaintenance.h"
 #include <lcm/lcm-cpp.hpp>
-#include "../../../../lcm-types/cpp/lidar_pose_t.hpp" // ask if this makes sense
+#include "../../../../lcm-types/cpp/xyzq_pose_t.hpp" // ask if this makes sense
 #include <iostream>
 
 namespace loam
@@ -106,14 +106,15 @@ void TransformMaintenance::odomAftMappedHandler(const nav_msgs::Odometry::ConstP
    tf::Matrix3x3(tf::Quaternion(geoQuat.z, -geoQuat.x, -geoQuat.y, geoQuat.w)).getRPY(roll, pitch, yaw);
    
    //lcm-types::cpp::vision_data_t lcm_pose; // ask if this makes sense
-   lidar_pose_t lcm_pose; // ask if this makes sense
-   lcm_pose.p_lidar[0] = -odomAftMapped->pose.pose.position.z;
-   lcm_pose.p_lidar[1] = -odomAftMapped->pose.pose.position.x;
-   lcm_pose.p_lidar[2] = odomAftMapped->pose.pose.position.y;
-   lcm_pose.lidar_quaternion[0] = -geoQuat.z;
-   lcm_pose.lidar_quaternion[1] = -geoQuat.x;
-   lcm_pose.lidar_quaternion[2] = geoQuat.y;
-   lcm_pose.lidar_quaternion[3] = geoQuat.w;
+   xyzq_pose_t lcm_pose; // ask if this makes sense
+   lcm_pose.xyz[0] = -odomAftMapped->pose.pose.position.z;
+   lcm_pose.xyz[1] = -odomAftMapped->pose.pose.position.x;
+   lcm_pose.xyz[2] = odomAftMapped->pose.pose.position.y;
+   lcm_pose.wxyz_quaternion[0] = geoQuat.w;   // w x y z
+   lcm_pose.wxyz_quaternion[1] = -geoQuat.z;
+   lcm_pose.wxyz_quaternion[2] = -geoQuat.x;
+   lcm_pose.wxyz_quaternion[3] = geoQuat.y;
+   
    //std::cout << "x =" << lcm_pose.p_lidar[0] << std::endl;
    //std::cout << "y =" << lcm_pose.p_lidar[1] << std::endl;
    //std::cout << "z =" << lcm_pose.p_lidar[2] << "\n" << std::endl;

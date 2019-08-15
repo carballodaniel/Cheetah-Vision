@@ -43,13 +43,9 @@ loam_velodyne/TransformMaintenance.h
 /home/nvidia/catkin_ws/src/loam_velodyne/src/lib/loam_velodyne/TransformMaintenance.h
 lcm/lcm-cpp.hpp
 -
-../../../../lcm-types/cpp/lidar_pose_t.hpp
-/home/nvidia/catkin_ws/lcm-types/cpp/lidar_pose_t.hpp
+../../../../lcm-types/cpp/xyzq_pose_t.hpp
+/home/nvidia/catkin_ws/lcm-types/cpp/xyzq_pose_t.hpp
 iostream
--
-
-/home/nvidia/lcm-types/cpp/lidar_pose_t.hpp
-lcm/lcm_coretypes.h
 -
 
 /opt/ros/melodic/include/geometry_msgs/Point.h

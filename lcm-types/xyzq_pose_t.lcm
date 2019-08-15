@@ -1,0 +1,5 @@
+struct  xyzq_pose_t
+{
+    double xyz[3]; 
+    double wxyz_quaternion[4];
+}

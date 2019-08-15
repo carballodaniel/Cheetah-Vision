@@ -6,17 +6,17 @@
 
 #include <lcm/lcm_coretypes.h>
 
-#ifndef __lidar_pose_t_hpp__
-#define __lidar_pose_t_hpp__
+#ifndef __xyzq_pose_t_hpp__
+#define __xyzq_pose_t_hpp__
 
 
 
-class lidar_pose_t
+class xyzq_pose_t
 {
     public:
-        double     p_lidar[3];
+        double     xyz[3];
 
-        double     lidar_quaternion[4];
+        double     wxyz_quaternion[4];
 
     public:
         /**
@@ -54,7 +54,7 @@ class lidar_pose_t
         inline static int64_t getHash();
 
         /**
-         * Returns "lidar_pose_t"
+         * Returns "xyzq_pose_t"
          */
         inline static const char* getTypeName();
 
@@ -65,7 +65,7 @@ class lidar_pose_t
         inline static uint64_t _computeHash(const __lcm_hash_ptr *p);
 };
 
-int lidar_pose_t::encode(void *buf, int offset, int maxlen) const
+int xyzq_pose_t::encode(void *buf, int offset, int maxlen) const
 {
     int pos = 0, tlen;
     int64_t hash = (int64_t)getHash();
@@ -79,7 +79,7 @@ int lidar_pose_t::encode(void *buf, int offset, int maxlen) const
     return pos;
 }
 
-int lidar_pose_t::decode(const void *buf, int offset, int maxlen)
+int xyzq_pose_t::decode(const void *buf, int offset, int maxlen)
 {
     int pos = 0, thislen;
 
@@ -94,49 +94,49 @@ int lidar_pose_t::decode(const void *buf, int offset, int maxlen)
     return pos;
 }
 
-int lidar_pose_t::getEncodedSize() const
+int xyzq_pose_t::getEncodedSize() const
 {
     return 8 + _getEncodedSizeNoHash();
 }
 
-int64_t lidar_pose_t::getHash()
+int64_t xyzq_pose_t::getHash()
 {
     static int64_t hash = _computeHash(NULL);
     return hash;
 }
 
-const char* lidar_pose_t::getTypeName()
+const char* xyzq_pose_t::getTypeName()
 {
-    return "lidar_pose_t";
+    return "xyzq_pose_t";
 }
 
-int lidar_pose_t::_encodeNoHash(void *buf, int offset, int maxlen) const
+int xyzq_pose_t::_encodeNoHash(void *buf, int offset, int maxlen) const
 {
     int pos = 0, tlen;
 
-    tlen = __double_encode_array(buf, offset + pos, maxlen - pos, &this->p_lidar[0], 3);
+    tlen = __double_encode_array(buf, offset + pos, maxlen - pos, &this->xyz[0], 3);
     if(tlen < 0) return tlen; else pos += tlen;
 
-    tlen = __double_encode_array(buf, offset + pos, maxlen - pos, &this->lidar_quaternion[0], 4);
+    tlen = __double_encode_array(buf, offset + pos, maxlen - pos, &this->wxyz_quaternion[0], 4);
     if(tlen < 0) return tlen; else pos += tlen;
 
     return pos;
 }
 
-int lidar_pose_t::_decodeNoHash(const void *buf, int offset, int maxlen)
+int xyzq_pose_t::_decodeNoHash(const void *buf, int offset, int maxlen)
 {
     int pos = 0, tlen;
 
-    tlen = __double_decode_array(buf, offset + pos, maxlen - pos, &this->p_lidar[0], 3);
+    tlen = __double_decode_array(buf, offset + pos, maxlen - pos, &this->xyz[0], 3);
     if(tlen < 0) return tlen; else pos += tlen;
 
-    tlen = __double_decode_array(buf, offset + pos, maxlen - pos, &this->lidar_quaternion[0], 4);
+    tlen = __double_decode_array(buf, offset + pos, maxlen - pos, &this->wxyz_quaternion[0], 4);
     if(tlen < 0) return tlen; else pos += tlen;
 
     return pos;
 }
 
-int lidar_pose_t::_getEncodedSizeNoHash() const
+int xyzq_pose_t::_getEncodedSizeNoHash() const
 {
     int enc_size = 0;
     enc_size += __double_encoded_array_size(NULL, 3);
@@ -144,9 +144,9 @@ int lidar_pose_t::_getEncodedSizeNoHash() const
     return enc_size;
 }
 
-uint64_t lidar_pose_t::_computeHash(const __lcm_hash_ptr *)
+uint64_t xyzq_pose_t::_computeHash(const __lcm_hash_ptr *)
 {
-    uint64_t hash = 0xe54d9d7346f5aed6LL;
+    uint64_t hash = 0x0dad6ea432bb46e3LL;
     return (hash<<1) + ((hash>>63)&1);
 }
 

@@ -2260,7 +2260,6 @@ loam_velodyne/src/lib/CMakeFiles/loam.dir/TransformMaintenance.cpp.o
  /home/nvidia/catkin_ws/src/loam_velodyne/include/loam_velodyne/Twist.h
  /home/nvidia/catkin_ws/src/loam_velodyne/include/loam_velodyne/Vector3.h
  /home/nvidia/catkin_ws/src/loam_velodyne/src/lib/TransformMaintenance.cpp
- /home/nvidia/lcm-types/cpp/lidar_pose_t.hpp
  /opt/ros/melodic/include/geometry_msgs/Point.h
  /opt/ros/melodic/include/geometry_msgs/PointStamped.h
  /opt/ros/melodic/include/geometry_msgs/Pose.h
