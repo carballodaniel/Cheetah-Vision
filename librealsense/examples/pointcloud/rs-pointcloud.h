@@ -1,4 +1,6 @@
 // My code
+#include <lcm/lcm-cpp.hpp>
+
 
 struct worldmap
 {
@@ -9,11 +11,17 @@ struct rotMat_t
 {
     double R[3][3];
 };
-
+/*
+std::string getLcmUrl(s64 ttl) {
+	assert(ttl >=0 && ttl<255);
+	return "udpm://239.255.76.67:7667?ttl=" + std::to_string(ttl);
+}
+*/
 int WORLD_SIZE = 10;
 int CELLS_PER_M = 100;
 xyzq_pose_t lidar_pose;
-lcm::LCM vision_lcm;
+lcm::LCM vision_lcm("udpm://239.255.76.67:7667?ttl=255");
+
 
 xyzq_pose_t poseFromRPY(double x, double y, double z, 
 							double yaw, double pitch, double roll) // yaw (Z), pitch (Y), roll (X)

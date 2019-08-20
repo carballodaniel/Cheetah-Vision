@@ -1,0 +1,175 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cbfbf/fast 
+/usr/bin/make -f CMakeFiles/cmTC_cbfbf.dir/build.make CMakeFiles/cmTC_cbfbf.dir/build
+make[1]: Entering directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cbfbf.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -DCOMPILER_SUPPORT_Wshorten64to32 -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_cbfbf.dir/src.cxx.o -c /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+CMakeFiles/cmTC_cbfbf.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_cbfbf.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_cbfbf.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_cbfbf/fast' failed
+make: *** [cmTC_cbfbf/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_41e80/fast 
+/usr/bin/make -f CMakeFiles/cmTC_41e80.dir/build.make CMakeFiles/cmTC_41e80.dir/build
+make[1]: Entering directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_41e80.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wenumconversion -Werror   -Wenum-conversion -o CMakeFiles/cmTC_41e80.dir/src.cxx.o -c /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wenum-conversion'
+CMakeFiles/cmTC_41e80.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_41e80.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_41e80.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_41e80/fast' failed
+make: *** [cmTC_41e80/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_38d5c/fast 
+/usr/bin/make -f CMakeFiles/cmTC_38d5c.dir/build.make CMakeFiles/cmTC_38d5c.dir/build
+make[1]: Entering directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_38d5c.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wcpp11extensions -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_38d5c.dir/src.cxx.o -c /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wc++11-extensions'
+CMakeFiles/cmTC_38d5c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_38d5c.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_38d5c.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_38d5c/fast' failed
+make: *** [cmTC_38d5c/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1e67f/fast 
+/usr/bin/make -f CMakeFiles/cmTC_1e67f.dir/build.make CMakeFiles/cmTC_1e67f.dir/build
+make[1]: Entering directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1e67f.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror   -wd981 -o CMakeFiles/cmTC_1e67f.dir/src.cxx.o -c /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd981'
+CMakeFiles/cmTC_1e67f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1e67f.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_1e67f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_1e67f/fast' failed
+make: *** [cmTC_1e67f/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_661d3/fast 
+/usr/bin/make -f CMakeFiles/cmTC_661d3.dir/build.make CMakeFiles/cmTC_661d3.dir/build
+make[1]: Entering directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_661d3.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror   -wd2304 -o CMakeFiles/cmTC_661d3.dir/src.cxx.o -c /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd2304'
+CMakeFiles/cmTC_661d3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_661d3.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_661d3.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_661d3/fast' failed
+make: *** [cmTC_661d3/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23102/fast 
+/usr/bin/make -f CMakeFiles/cmTC_23102.dir/build.make CMakeFiles/cmTC_23102.dir/build
+make[1]: Entering directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_23102.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_STRICTANSI -Werror   -strict-ansi -o CMakeFiles/cmTC_23102.dir/src.cxx.o -c /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-strict-ansi'
+CMakeFiles/cmTC_23102.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_23102.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_23102.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_23102/fast' failed
+make: *** [cmTC_23102/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9c6e1/fast 
+/usr/bin/make -f CMakeFiles/cmTC_9c6e1.dir/build.make CMakeFiles/cmTC_9c6e1.dir/build
+make[1]: Entering directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9c6e1.dir/src.cxx.o
+/usr/bin/c++    -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_Qunusedarguments -Werror   -Qunused-arguments -o CMakeFiles/cmTC_9c6e1.dir/src.cxx.o -c /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Qunused-arguments'
+CMakeFiles/cmTC_9c6e1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9c6e1.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_9c6e1.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_9c6e1/fast' failed
+make: *** [cmTC_9c6e1/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1c3e5/fast 
+/usr/bin/make -f CMakeFiles/cmTC_1c3e5.dir/build.make CMakeFiles/cmTC_1c3e5.dir/build
+make[1]: Entering directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c3e5.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1c3e5.dir/CheckSymbolExists.c.o   -c /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_1c3e5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c3e5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1c3e5.dir/CheckSymbolExists.c.o  -o cmTC_1c3e5 
+CMakeFiles/cmTC_1c3e5.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x14): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x18): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1c3e5.dir/build.make:86: recipe for target 'cmTC_1c3e5' failed
+make[1]: *** [cmTC_1c3e5] Error 1
+make[1]: Leaving directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_1c3e5/fast' failed
+make: *** [cmTC_1c3e5/fast] Error 2
+
+File /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2eced/fast 
+/usr/bin/make -f CMakeFiles/cmTC_2eced.dir/build.make CMakeFiles/cmTC_2eced.dir/build
+make[1]: Entering directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2eced.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2eced.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2eced
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2eced.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_2eced.dir/CheckFunctionExists.c.o  -o cmTC_2eced -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2eced.dir/build.make:86: recipe for target 'cmTC_2eced' failed
+make[1]: *** [cmTC_2eced] Error 1
+make[1]: Leaving directory '/home/nvidia/Downloads/eigen-eigen-323c052e1731/build_dir/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_2eced/fast' failed
+make: *** [cmTC_2eced/fast] Error 2
+
+

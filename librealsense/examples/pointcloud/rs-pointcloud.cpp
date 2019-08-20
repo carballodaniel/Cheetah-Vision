@@ -6,7 +6,7 @@
 
 #include <algorithm>            // std::min, std::max
 
-#include <lcm/lcm-cpp.hpp>
+
 #include "../../../lcm-types/cpp/rs_pointcloud_t.hpp" // ask if this makes sense
 #include "../../../lcm-types/cpp/xyzq_pose_t.hpp"
 #include "../../../lcm-types/cpp/heightmap_t.hpp"
