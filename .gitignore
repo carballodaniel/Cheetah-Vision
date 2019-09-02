@@ -1,11 +1,13 @@
 .dbus
 Downloads
 Documents
+Desktop
 Music
 Pictures
 Public
 Templates
 Videos
+Cheetah-Software
 .cache
 .cmake
 .compiz
@@ -17,5 +19,13 @@ Videos
 .ssh
 .nv
 .local
+.vim
+.subversion
+.pki
+.java
+.gnupg
+.gnome
+.cmake
+
 
 

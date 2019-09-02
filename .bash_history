@@ -1090,3 +1090,226 @@ cd
 cd buildLibrealsense2Xavier/
 ls
 ./installLibrealsense.sh 
+cd
+roslaunch loam_velodyne loam_velodyne.launch lidar:=OS1-64 scanPeriod:=0.05
+roslaunch ouster_ros os1.launch os1_hostname:=os1-991910000511 os1_udp_dest:=192.168.1.1 lidar_mode:=1024x20 viz:=false
+cd
+sudo gedit base_realsense_node.cpp 
+sudo systemctl stop dnsmasq
+sudo systemctl start dnsmasq
+journalctl -fu dnsmasq
+sudo systemctl stop dnsmasq
+sudo systemctl start dnsmasq
+journalctl -fu dnsmasq
+lcm-spy
+ls
+cd scripts/
+ls
+./make_types.sh 
+git add *
+git commit -m "Increased TTL so publishes to network"
+git push 
+git push remote origin
+git push origin master
+git origin
+git remote origin
+got remote ls
+got remote list
+git remote list
+git remote -v
+git config
+git config --global -l
+git config -l
+git remote l
+git remote -l
+git remote -v
+vim .git/config 
+git remote add origin https://github.com/carballodaniel/Cheetah-Vision.git
+git remote -v
+git push origin master
+git config
+sudo gedit librealsense/examples/pointcloud/rs-pointcloud.cpp 
+tmux
+cd librealsense/build/examples/pointcloud/
+ls
+cd ..
+cd
+cd librealsense/build/
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud \
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+ps -a
+top
+ps -a
+vim
+source ~/.bashrc 
+vim
+tmux
+ls
+cd ..
+ls
+mkdir another
+sudo mkdir another
+cd another/
+ls
+cd ..
+cd another/
+ls
+git clone --recursive https://github.com/dhkim0821/dotfiles.git
+sudo git clone --recursive https://github.com/dhkim0821/dotfiles.git
+cd ..
+cd nvidia/
+ls
+tmux
+source .bashrc 
+tmux
+lcm-spy
+source ~/.bashrc 
+cd ..
+ls
+make
+cd build/
+make
+cd ..
+cd examples
+ls
+cd pointcloud/
+ls
+sudo gedit rs-pointcloud.cpp
+cd
+sudo apt-get update
+sudo apt-get install libopencv-dev
+cd scripts
+cd
+cd scripts
+ls
+./make_types.sh
+ls
+cd librealsense/
+ls
+./examples/pointcloud/rs-pointcloud 
+cd examples
+ls
+cd pointcloud/
+ls
+gedit rs-pointcloud.
+ls
+gedit rs-pointcloud.cpp
+cd 
+cd librealsense/
+ls
+cd build/
+ls
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+source ~/.bashrc 
+make
+source ~/.bashrc 
+./examples/pointcloud/rs-pointcloud 
+make
+source ~/.bashrc 
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make -j
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make
+./examples/pointcloud/rs-pointcloud 
+make

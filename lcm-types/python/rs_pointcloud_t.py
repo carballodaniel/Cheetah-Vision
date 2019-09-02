@@ -10,10 +10,11 @@ except ImportError:
 import struct
 
 class rs_pointcloud_t(object):
-    __slots__ = ["pointlist"]
+    __slots__ = ["pointlist", "position"]
 
     def __init__(self):
-        self.pointlist = [ [ 0.0 for dim1 in range(3) ] for dim0 in range(921) ]
+        self.pointlist = [ [ 0.0 for dim1 in range(3) ] for dim0 in range(5001) ]
+        self.position = [ 0.0 for dim0 in range(3) ]
 
     def encode(self):
         buf = BytesIO()
@@ -22,8 +23,9 @@ class rs_pointcloud_t(object):
         return buf.getvalue()
 
     def _encode_one(self, buf):
-        for i0 in range(921):
+        for i0 in range(5001):
             buf.write(struct.pack('>3d', *self.pointlist[i0][:3]))
+        buf.write(struct.pack('>3d', *self.position[:3]))
 
     def decode(data):
         if hasattr(data, 'read'):
@@ -38,15 +40,16 @@ class rs_pointcloud_t(object):
     def _decode_one(buf):
         self = rs_pointcloud_t()
         self.pointlist = []
-        for i0 in range(921):
+        for i0 in range(5001):
             self.pointlist.append(struct.unpack('>3d', buf.read(24)))
+        self.position = struct.unpack('>3d', buf.read(24))
         return self
     _decode_one = staticmethod(_decode_one)
 
     _hash = None
     def _get_hash_recursive(parents):
         if rs_pointcloud_t in parents: return 0
-        tmphash = (0x35950fbe913fe282) & 0xffffffffffffffff
+        tmphash = (0x982922be55abdcc9) & 0xffffffffffffffff
         tmphash  = (((tmphash<<1)&0xffffffffffffffff)  + (tmphash>>63)) & 0xffffffffffffffff
         return tmphash
     _get_hash_recursive = staticmethod(_get_hash_recursive)

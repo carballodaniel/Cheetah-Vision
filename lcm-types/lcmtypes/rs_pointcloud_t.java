@@ -12,14 +12,16 @@ import lcm.lcm.*;
 public final class rs_pointcloud_t implements lcm.lcm.LCMEncodable
 {
     public double pointlist[][];
+    public double position[];
  
     public rs_pointcloud_t()
     {
-        pointlist = new double[921][3];
+        pointlist = new double[5001][3];
+        position = new double[3];
     }
  
     public static final long LCM_FINGERPRINT;
-    public static final long LCM_FINGERPRINT_BASE = 0x35950fbe913fe282L;
+    public static final long LCM_FINGERPRINT_BASE = 0x982922be55abdcc9L;
  
     static {
         LCM_FINGERPRINT = _hashRecursive(new ArrayList<Class<?>>());
@@ -45,10 +47,14 @@ public final class rs_pointcloud_t implements lcm.lcm.LCMEncodable
  
     public void _encodeRecursive(DataOutput outs) throws IOException
     {
-        for (int a = 0; a < 921; a++) {
+        for (int a = 0; a < 5001; a++) {
             for (int b = 0; b < 3; b++) {
                 outs.writeDouble(this.pointlist[a][b]); 
             }
+        }
+ 
+        for (int a = 0; a < 3; a++) {
+            outs.writeDouble(this.position[a]); 
         }
  
     }
@@ -75,11 +81,16 @@ public final class rs_pointcloud_t implements lcm.lcm.LCMEncodable
  
     public void _decodeRecursive(DataInput ins) throws IOException
     {
-        this.pointlist = new double[(int) 921][(int) 3];
-        for (int a = 0; a < 921; a++) {
+        this.pointlist = new double[(int) 5001][(int) 3];
+        for (int a = 0; a < 5001; a++) {
             for (int b = 0; b < 3; b++) {
                 this.pointlist[a][b] = ins.readDouble();
             }
+        }
+ 
+        this.position = new double[(int) 3];
+        for (int a = 0; a < 3; a++) {
+            this.position[a] = ins.readDouble();
         }
  
     }
@@ -87,10 +98,12 @@ public final class rs_pointcloud_t implements lcm.lcm.LCMEncodable
     public lcmtypes.rs_pointcloud_t copy()
     {
         lcmtypes.rs_pointcloud_t outobj = new lcmtypes.rs_pointcloud_t();
-        outobj.pointlist = new double[(int) 921][(int) 3];
-        for (int a = 0; a < 921; a++) {
+        outobj.pointlist = new double[(int) 5001][(int) 3];
+        for (int a = 0; a < 5001; a++) {
             System.arraycopy(this.pointlist[a], 0, outobj.pointlist[a], 0, 3);        }
  
+        outobj.position = new double[(int) 3];
+        System.arraycopy(this.position, 0, outobj.position, 0, 3); 
         return outobj;
     }
  

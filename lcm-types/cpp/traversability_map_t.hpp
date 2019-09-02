@@ -6,17 +6,15 @@
 
 #include <lcm/lcm_coretypes.h>
 
-#ifndef __rs_pointcloud_t_hpp__
-#define __rs_pointcloud_t_hpp__
+#ifndef __traversability_map_t_hpp__
+#define __traversability_map_t_hpp__
 
 
 
-class rs_pointcloud_t
+class traversability_map_t
 {
     public:
-        double     pointlist[5001][3];
-
-        double     position[3];
+        int32_t    map[100][100];
 
     public:
         /**
@@ -54,7 +52,7 @@ class rs_pointcloud_t
         inline static int64_t getHash();
 
         /**
-         * Returns "rs_pointcloud_t"
+         * Returns "traversability_map_t"
          */
         inline static const char* getTypeName();
 
@@ -65,7 +63,7 @@ class rs_pointcloud_t
         inline static uint64_t _computeHash(const __lcm_hash_ptr *p);
 };
 
-int rs_pointcloud_t::encode(void *buf, int offset, int maxlen) const
+int traversability_map_t::encode(void *buf, int offset, int maxlen) const
 {
     int pos = 0, tlen;
     int64_t hash = (int64_t)getHash();
@@ -79,7 +77,7 @@ int rs_pointcloud_t::encode(void *buf, int offset, int maxlen) const
     return pos;
 }
 
-int rs_pointcloud_t::decode(const void *buf, int offset, int maxlen)
+int traversability_map_t::decode(const void *buf, int offset, int maxlen)
 {
     int pos = 0, thislen;
 
@@ -94,63 +92,56 @@ int rs_pointcloud_t::decode(const void *buf, int offset, int maxlen)
     return pos;
 }
 
-int rs_pointcloud_t::getEncodedSize() const
+int traversability_map_t::getEncodedSize() const
 {
     return 8 + _getEncodedSizeNoHash();
 }
 
-int64_t rs_pointcloud_t::getHash()
+int64_t traversability_map_t::getHash()
 {
     static int64_t hash = _computeHash(NULL);
     return hash;
 }
 
-const char* rs_pointcloud_t::getTypeName()
+const char* traversability_map_t::getTypeName()
 {
-    return "rs_pointcloud_t";
+    return "traversability_map_t";
 }
 
-int rs_pointcloud_t::_encodeNoHash(void *buf, int offset, int maxlen) const
+int traversability_map_t::_encodeNoHash(void *buf, int offset, int maxlen) const
 {
     int pos = 0, tlen;
 
-    for (int a0 = 0; a0 < 5001; a0++) {
-        tlen = __double_encode_array(buf, offset + pos, maxlen - pos, &this->pointlist[a0][0], 3);
+    for (int a0 = 0; a0 < 100; a0++) {
+        tlen = __int32_t_encode_array(buf, offset + pos, maxlen - pos, &this->map[a0][0], 100);
         if(tlen < 0) return tlen; else pos += tlen;
     }
-
-    tlen = __double_encode_array(buf, offset + pos, maxlen - pos, &this->position[0], 3);
-    if(tlen < 0) return tlen; else pos += tlen;
 
     return pos;
 }
 
-int rs_pointcloud_t::_decodeNoHash(const void *buf, int offset, int maxlen)
+int traversability_map_t::_decodeNoHash(const void *buf, int offset, int maxlen)
 {
     int pos = 0, tlen;
 
-    for (int a0 = 0; a0 < 5001; a0++) {
-        tlen = __double_decode_array(buf, offset + pos, maxlen - pos, &this->pointlist[a0][0], 3);
+    for (int a0 = 0; a0 < 100; a0++) {
+        tlen = __int32_t_decode_array(buf, offset + pos, maxlen - pos, &this->map[a0][0], 100);
         if(tlen < 0) return tlen; else pos += tlen;
     }
-
-    tlen = __double_decode_array(buf, offset + pos, maxlen - pos, &this->position[0], 3);
-    if(tlen < 0) return tlen; else pos += tlen;
 
     return pos;
 }
 
-int rs_pointcloud_t::_getEncodedSizeNoHash() const
+int traversability_map_t::_getEncodedSizeNoHash() const
 {
     int enc_size = 0;
-    enc_size += 5001 * __double_encoded_array_size(NULL, 3);
-    enc_size += __double_encoded_array_size(NULL, 3);
+    enc_size += 100 * __int32_t_encoded_array_size(NULL, 100);
     return enc_size;
 }
 
-uint64_t rs_pointcloud_t::_computeHash(const __lcm_hash_ptr *)
+uint64_t traversability_map_t::_computeHash(const __lcm_hash_ptr *)
 {
-    uint64_t hash = 0x982922be55abdcc9LL;
+    uint64_t hash = 0x065bb5bb541c18c9LL;
     return (hash<<1) + ((hash>>63)&1);
 }
 

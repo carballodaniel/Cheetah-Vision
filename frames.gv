@@ -1,8 +1,0 @@
-digraph G {
-"os1_sensor" -> "os1_imu"[label="Broadcaster: /os1_cloud_node\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1560968483.405 sec old)\nBuffer length: 0.000 sec\n"];
-"os1_sensor" -> "os1_lidar"[label="Broadcaster: /os1_cloud_node\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1560968483.405 sec old)\nBuffer length: 0.000 sec\n"];
-edge [style=invis];
- subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
-"Recorded at time: 1560968483.405"[ shape=plaintext ] ;
- }->"os1_sensor";
-}

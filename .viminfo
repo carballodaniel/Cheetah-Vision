@@ -11,13 +11,172 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/lcm
+~Msle0~/\<DEPENDENCIES\>
+
+# Last Substitute String:
+$
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1564672747,,"q"
+|2,0,1567433619,,"q"
+:w
+|2,0,1567433556,,"w"
+:e .gitignore
+|2,0,1567433432,,"e .gitignore"
+:b examples/pointcloud/rs-pointcloud.cpp
+|2,0,1566408045,,"b examples/pointcloud/rs-pointcloud.cpp"
+:b examples/pointcloud/rs-pointcloud.
+|2,0,1566408040,,"b examples/pointcloud/rs-pointcloud."
+:e 
+|2,0,1566407978,,"e "
+:e ../lcm-types/rs_pointcloud_t.lcm
+|2,0,1566407723,,"e ../lcm-types/rs_pointcloud_t.lcm"
+:e ~/.vimrc
+|2,0,1566407531,,"e ~/.vimrc"
+:w!
+|2,0,1566407438,,"w!"
+:e examples/pointcloud/rs-pointcloud.h
+|2,0,1566407206,,"e examples/pointcloud/rs-pointcloud.h"
+:e examples/pointcloud/rs-pointcloud.cpp
+|2,0,1566407184,,"e examples/pointcloud/rs-pointcloud.cpp"
+:b ../lcm-types/rs_pointcloud_t.lcm
+|2,0,1566395369,,"b ../lcm-types/rs_pointcloud_t.lcm"
+:bd
+|2,0,1566394722,,"bd"
+:BD
+|2,0,1566394717,,"BD"
+:e ../lcm-types/cpp/rs_pointcloud_t.hpp
+|2,0,1566394714,,"e ../lcm-types/cpp/rs_pointcloud_t.hpp"
+:e examples/example.hpp
+|2,0,1566392957,,"e examples/example.hpp"
+:e examples/pointcloud/CMakeLists.txt
+|2,0,1566392942,,"e examples/pointcloud/CMakeLists.txt"
+:b CMakeLists.txt
+|2,0,1566392871,,"b CMakeLists.txt"
+:e CMake/include_os.cmake
+|2,0,1566392857,,"e CMake/include_os.cmake"
+:e CMakeLists.txt
+|2,0,1566392815,,"e CMakeLists.txt"
+:e examples/CMakeLists.txt
+|2,0,1566392738,,"e examples/CMakeLists.txt"
+:e examples/pointcloud/
+|2,0,1566392168,,"e examples/pointcloud/"
+:e %:h LICENSE
+|2,0,1566392162,,"e %:h LICENSE"
+:A
+|2,0,1566392155,,"A"
+:e ~/.bashrc
+|2,0,1566392086,,"e ~/.bashrc"
+:Q
+|2,0,1566392081,,"Q"
+:e poin
+|2,0,1566391930,,"e poin"
+:e CMake
+|2,0,1566391874,,"e CMake"
+:e ../another/
+|2,0,1566391750,,"e ../another/"
+:e ../another/dotfiles/vimrc
+|2,0,1566391709,,"e ../another/dotfiles/vimrc"
+:e .vimrc
+|2,0,1566391698,,"e .vimrc"
+:q!
+|2,0,1566391590,,"q!"
+:e .bashrc
+|2,0,1566391519,,"e .bashrc"
+:e .tmux.conf
+|2,0,1566391471,,"e .tmux.conf"
+:e ../another/dotfiles/tmux.conf
+|2,0,1566391440,,"e ../another/dotfiles/tmux.conf"
+:e ../another/dotfiles/bashrc
+|2,0,1566391269,,"e ../another/dotfiles/bashrc"
 
 # Search String History (newest to oldest):
+? \<state_estimator_pose\>
+|2,1,1566409500,,"\\<state_estimator_pose\\>"
+? \<stateEstimatorToXYZQPose\>
+|2,1,1566409148,,"\\<stateEstimatorToXYZQPose\\>"
+? \<rs_pointcloud\>
+|2,1,1566408900,,"\\<rs_pointcloud\\>"
+? \<rs_pointcloud_t\>
+|2,1,1566408892,,"\\<rs_pointcloud_t\\>"
+? \<outputCloud\>
+|2,1,1566408868,,"\\<outputCloud\\>"
+? \<COM_to_camera_TF\>
+|2,1,1566408055,,"\\<COM_to_camera_TF\\>"
+? \<r2\>
+|2,1,1566407922,,"\\<r2\\>"
+?/  
+|2,1,1566407510,47,"  "
+?/ak
+|2,1,1566407497,47,"ak"
+? \<rotationMatrix\>
+|2,1,1566407487,,"\\<rotationMatrix\\>"
+? \<rotMat_t\>
+|2,1,1566407394,,"\\<rotMat_t\\>"
+? \<poseToRotationMatrix\>
+|2,1,1566407291,,"\\<poseToRotationMatrix\\>"
+? \<coordinateTransformation\>
+|2,1,1566407264,,"\\<coordinateTransformation\\>"
+? \<xyzq_pose_t\>
+|2,1,1566407219,,"\\<xyzq_pose_t\\>"
+?/trans
+|2,1,1566407187,47,"trans"
+? \<pointlist\>
+|2,1,1566395478,,"\\<pointlist\\>"
+? \<vertices\>
+|2,1,1566395468,,"\\<vertices\\>"
+? \<cf_pointcloud\>
+|2,1,1566395360,,"\\<cf_pointcloud\\>"
+? }
+|2,1,1566394387,,"}"
+? \<_Process_DhKim\>
+|2,1,1566393908,,"\\<_Process_DhKim\\>"
+?/      
+|2,1,1566393640,47,"      "
+?/rs
+|2,1,1566393631,47,"rs"
+?/aadfasdf
+|2,1,1566393625,47,"aadfasdf"
+? \<heightmap_t\>
+|2,1,1566393324,,"\\<heightmap_t\\>"
+? \<vision_lcm\>
+|2,1,1566393291,,"\\<vision_lcm\\>"
+? \<worldmap\>
+|2,1,1566393261,,"\\<worldmap\\>"
+? \<state_estimator_xyzq\>
+|2,1,1566393223,,"\\<state_estimator_xyzq\\>"
+? \<local_heightmap\>
+|2,1,1566393213,,"\\<local_heightmap\\>"
+? \<pipe\>
+|2,1,1566393139,,"\\<pipe\\>"
+? \<points\>
+|2,1,1566393105,,"\\<points\\>"
+? \<_Process_Daniel\>
+|2,1,1566393025,,"\\<_Process_Daniel\\>"
+? \<example\>
+|2,1,1566392949,,"\\<example\\>"
+? \<BUILD_EXAMPLES\>
+|2,1,1566392896,,"\\<BUILD_EXAMPLES\\>"
+? \<global_set_flags\>
+|2,1,1566392849,,"\\<global_set_flags\\>"
+? \<BUILD_GRAPHICAL_EXAMPLES\>
+|2,1,1566392846,,"\\<BUILD_GRAPHICAL_EXAMPLES\\>"
+? \<wf_pointcloud\>
+|2,1,1566392506,,"\\<wf_pointcloud\\>"
+? \<num_points\>
+|2,1,1566392283,,"\\<num_points\\>"
+? \<DEPENDENCIES\>
+|2,1,1566392049,,"\\<DEPENDENCIES\\>"
+?/exa
+|2,1,1566391908,47,"exa"
+?/exap
+|2,1,1566391904,47,"exap"
+? @$
+|2,1,1566391879,,"@$"
+?/conf
+|2,1,1566391529,47,"conf"
+?/dot
+|2,1,1566391503,47,"dot"
 ?/lcm
 |2,1,1564672523,47,"lcm"
 
@@ -28,236 +187,557 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+"0	LINE	0
+	    xyzq_pos.xyz[0] = 0.;
+|3,0,0,1,1,0,1566409968,"    xyzq_pos.xyz[0] = 0.;"
+"1	CHAR	0
+	;
+		int num_skip = 50;
+	
+|3,0,1,0,3,0,1566409127,";","	int num_skip = 50;",""
+"2	LINE	0
+		return outputCloud;
+|3,0,2,1,1,0,1566408830,"	return outputCloud;"
+"3	LINE	0
+		rs_pointcloud_t outputCloud;
+|3,0,3,1,1,0,1566408679,"	rs_pointcloud_t outputCloud;"
+"4	CHAR	0
+	 &rf_pointcloud);
+			vision_lcm.publish("cf_pointcloud", &c
+|3,0,4,0,2,0,1566408104," &rf_pointcloud);","		vision_lcm.publish(\"cf_pointcloud\", &c"
+"5	LINE	0
+			for (int j=0; j<c2; j++){
+|3,0,5,1,1,0,1566407808,"		for (int j=0; j<c2; j++){"
+"6	LINE	0
+	    rotationMatrix.R[2][0], rotationMatrix.R[2][1], rotationMatrix.R[2][2]);
+|3,0,6,1,1,0,1566407761,"    rotationMatrix.R[2][0], rotationMatrix.R[2][1], rotationMatrix.R[2][2]);"
+"7	LINE	0
+	    rotationMatrix.R[1][0], rotationMatrix.R[1][1], rotationMatrix.R[1][2],
+|3,0,7,1,1,0,1566407760,"    rotationMatrix.R[1][0], rotationMatrix.R[1][1], rotationMatrix.R[1][2],"
+"8	LINE	0
+	    rotationMatrix.R[0][0], rotationMatrix.R[0][1], rotationMatrix.R[0][2],
+|3,0,8,1,1,0,1566407760,"    rotationMatrix.R[0][0], rotationMatrix.R[0][1], rotationMatrix.R[0][2],"
+"9	LINE	0
+	    printf("mat: %f, %f, %f \n %f, %f, %f, \n, %f, %f,%f\n", 
+|3,0,9,1,1,0,1566407759,"    printf(\"mat: %f, %f, %f \\n %f, %f, %f, \\n, %f, %f,%f\\n\", "
+""-	CHAR	0
+	wf_pointcloud = 
+|3,1,36,0,1,0,1566409388,"wf_pointcloud = "
 
 # File marks:
-'0  7  1  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
-|4,48,7,1,1564673378,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
-'1  6  0  ~/librealsense/CMakeLists.txt
-|4,49,6,0,1564672747,"~/librealsense/CMakeLists.txt"
-'2  1  0  ~/catkin_ws/src/loam_republiser.cpp
-|4,50,1,0,1562614485,"~/catkin_ws/src/loam_republiser.cpp"
-'3  1  0  ~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch
-|4,51,1,0,1561151196,"~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch"
-'4  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,52,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
-'5  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,53,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
-'6  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,54,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
+'0  14  6  ~/.gitignore
+|4,48,14,6,1567433619,"~/.gitignore"
+'1  19  17  ~/Cheetah-Software/scripts/make_types.sh
+|4,49,19,17,1566430466,"~/Cheetah-Software/scripts/make_types.sh"
+'2  79  3  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,50,79,3,1566410645,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+'3  4  0  ~/lcm-types/rs_pointcloud_t.lcm
+|4,51,4,0,1566406950,"~/lcm-types/rs_pointcloud_t.lcm"
+'4  4  0  ~/lcm-types/rs_pointcloud_t.lcm
+|4,52,4,0,1566406950,"~/lcm-types/rs_pointcloud_t.lcm"
+'5  17  0  ~/scripts/make_types.sh
+|4,53,17,0,1566394692,"~/scripts/make_types.sh"
+'6  121  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,54,121,0,1566392180,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+'7  151  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,55,151,0,1566392180,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+'8  151  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,56,151,0,1566392180,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+'9  121  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,57,121,0,1566392180,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
 
 # Jumplist (newest first):
--'  7  1  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
-|4,39,7,1,1564673378,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  14  6  ~/.gitignore
+|4,39,14,6,1567433619,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1567433432,"~/.gitignore"
+-'  19  17  ~/Cheetah-Software/scripts/make_types.sh
+|4,39,19,17,1566430466,"~/Cheetah-Software/scripts/make_types.sh"
+-'  19  17  ~/Cheetah-Software/scripts/make_types.sh
+|4,39,19,17,1566430466,"~/Cheetah-Software/scripts/make_types.sh"
+-'  79  3  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,79,3,1566410645,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  79  3  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,79,3,1566410645,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  137  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,137,0,1566409151,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  137  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,137,0,1566409151,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  132  40  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,132,40,1566409097,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  132  40  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,132,40,1566409097,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  116  4  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,116,4,1566408900,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  116  4  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,116,4,1566408900,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  115  12  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,115,12,1566408892,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  115  12  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,115,12,1566408892,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  131  9  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,131,9,1566408868,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  131  9  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,131,9,1566408868,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  100  19  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,100,19,1566407928,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  100  19  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,100,19,1566407928,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  125  18  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,125,18,1566407922,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  125  18  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,125,18,1566407922,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  126  11  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,126,11,1566407774,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  126  11  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,126,11,1566407774,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  129  2  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,129,2,1566407738,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  128  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,128,0,1566407738,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  129  2  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,129,2,1566407738,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  128  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,128,0,1566407738,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  122  65  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,122,65,1566407502,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  122  65  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,122,65,1566407502,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  123  53  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,123,53,1566407487,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  123  53  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,123,53,1566407487,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  118  2  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,118,2,1566407394,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  118  2  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,118,2,1566407394,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  72  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,72,0,1566407270,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  72  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,72,0,1566407270,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  184  9  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,184,9,1566407220,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  184  9  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,184,9,1566407220,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  25  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,25,0,1566407219,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  25  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,25,0,1566407219,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  30  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,30,0,1566407215,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  40  4  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,40,4,1566407215,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  30  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,30,0,1566407215,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  40  4  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,40,4,1566407215,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  54  30  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,54,30,1566407214,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  76  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,76,0,1566407214,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  54  30  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,54,30,1566407214,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  76  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,76,0,1566407214,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  78  1  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,78,1,1566407213,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  114  41  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,114,41,1566407213,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  78  1  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,78,1,1566407213,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  114  41  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,114,41,1566407213,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  138  36  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,138,36,1566407212,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  138  36  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,138,36,1566407212,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  3  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,3,0,1566407211,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  3  0  ~/librealsense/examples/pointcloud/rs-pointcloud.h
+|4,39,3,0,1566407211,"~/librealsense/examples/pointcloud/rs-pointcloud.h"
+-'  150  22  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,150,22,1566407206,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  150  22  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,150,22,1566407206,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  125  28  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,125,28,1566407189,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  125  28  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,125,28,1566407189,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  123  28  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,123,28,1566407188,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  120  28  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,120,28,1566407188,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  123  28  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,123,28,1566407188,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  120  28  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,120,28,1566407188,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  22  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,22,0,1566407187,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  22  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,22,0,1566407187,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
 -'  1  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
-|4,39,1,0,1564673294,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
--'  6  0  ~/librealsense/CMakeLists.txt
-|4,39,6,0,1564672747,"~/librealsense/CMakeLists.txt"
--'  6  0  ~/librealsense/CMakeLists.txt
-|4,39,6,0,1564672747,"~/librealsense/CMakeLists.txt"
--'  1  0  ~/librealsense/CMakeLists.txt
-|4,39,1,0,1564672521,"~/librealsense/CMakeLists.txt"
--'  1  0  ~/librealsense/CMakeLists.txt
-|4,39,1,0,1564672521,"~/librealsense/CMakeLists.txt"
--'  1  0  ~/catkin_ws/src/loam_republiser.cpp
-|4,39,1,0,1562614485,"~/catkin_ws/src/loam_republiser.cpp"
--'  1  0  ~/catkin_ws/src/loam_republiser.cpp
-|4,39,1,0,1562614485,"~/catkin_ws/src/loam_republiser.cpp"
--'  1  0  ~/catkin_ws/src/loam_republiser.cpp
-|4,39,1,0,1562614485,"~/catkin_ws/src/loam_republiser.cpp"
--'  1  0  ~/catkin_ws/src/loam_republiser.cpp
-|4,39,1,0,1562614485,"~/catkin_ws/src/loam_republiser.cpp"
--'  1  0  ~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch
-|4,39,1,0,1561151196,"~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch"
--'  1  0  ~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch
-|4,39,1,0,1561151196,"~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch"
--'  1  0  ~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch
-|4,39,1,0,1561151196,"~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch"
--'  1  0  ~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch
-|4,39,1,0,1561151196,"~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch"
--'  1  0  ~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch
-|4,39,1,0,1561151196,"~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch"
--'  1  0  ~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch
-|4,39,1,0,1561151196,"~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch"
--'  1  0  ~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch
-|4,39,1,0,1561151196,"~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch"
--'  1  0  ~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch
-|4,39,1,0,1561151196,"~/catkin_ws/src/loam_velodyne/launch/loam_velodyne.launch"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/format_code.sh
-|4,39,1,0,1560541156,"~/Downloads/lcm-1.4.0/format_code.sh"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  1  0  ~/Downloads/lcm-1.4.0/README.md
-|4,39,1,0,1560541099,"~/Downloads/lcm-1.4.0/README.md"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
--'  65  0  ~/Downloads/cmake-3.14.5/README.rst
-|4,39,65,0,1560530551,"~/Downloads/cmake-3.14.5/README.rst"
+|4,39,1,0,1566407184,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  1  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,1,0,1566407184,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  4  0  ~/lcm-types/rs_pointcloud_t.lcm
+|4,39,4,0,1566406950,"~/lcm-types/rs_pointcloud_t.lcm"
+-'  4  0  ~/lcm-types/rs_pointcloud_t.lcm
+|4,39,4,0,1566406950,"~/lcm-types/rs_pointcloud_t.lcm"
+-'  4  0  ~/lcm-types/rs_pointcloud_t.lcm
+|4,39,4,0,1566406950,"~/lcm-types/rs_pointcloud_t.lcm"
+-'  4  0  ~/lcm-types/rs_pointcloud_t.lcm
+|4,39,4,0,1566406950,"~/lcm-types/rs_pointcloud_t.lcm"
+-'  158  37  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,158,37,1566395369,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  158  37  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,158,37,1566395369,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  158  37  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,158,37,1566395369,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  158  37  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,158,37,1566395369,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  17  0  ~/scripts/make_types.sh
+|4,39,17,0,1566394692,"~/scripts/make_types.sh"
+-'  17  0  ~/scripts/make_types.sh
+|4,39,17,0,1566394692,"~/scripts/make_types.sh"
+-'  17  0  ~/scripts/make_types.sh
+|4,39,17,0,1566394692,"~/scripts/make_types.sh"
+-'  17  0  ~/scripts/make_types.sh
+|4,39,17,0,1566394692,"~/scripts/make_types.sh"
+-'  1  0  ~/scripts/make_types.sh
+|4,39,1,0,1566394684,"~/scripts/make_types.sh"
+-'  1  0  ~/scripts/make_types.sh
+|4,39,1,0,1566394684,"~/scripts/make_types.sh"
+-'  1  0  ~/scripts/make_types.sh
+|4,39,1,0,1566394684,"~/scripts/make_types.sh"
+-'  1  0  ~/scripts/make_types.sh
+|4,39,1,0,1566394684,"~/scripts/make_types.sh"
+-'  167  35  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,167,35,1566394462,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  167  35  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,167,35,1566394462,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  167  35  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,167,35,1566394462,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  167  35  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,167,35,1566394462,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  171  50  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,171,50,1566394461,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  171  50  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,171,50,1566394461,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  171  50  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,171,50,1566394461,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  171  50  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,171,50,1566394461,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  165  16  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,165,16,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  140  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,140,0,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  141  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,141,0,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  142  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,142,0,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  165  16  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,165,16,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  140  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,140,0,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  141  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,141,0,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  142  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,142,0,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  165  16  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,165,16,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
+-'  140  0  ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
+|4,39,140,0,1566394455,"~/librealsense/examples/pointcloud/rs-pointcloud.cpp"
 
 # History of marks within files (newest to oldest):
 
+> ~/.gitignore
+	*	1567433617	0
+	"	14	6
+	^	4	7
+	.	4	6
+	+	28	6
+	+	20	0
+	+	4	6
+
+> ~/Cheetah-Software/scripts/make_types.sh
+	*	1566430283	0
+	"	19	17
+
+> ~/librealsense/examples/pointcloud/rs-pointcloud.h
+	*	1566410644	0
+	"	79	3
+	^	79	4
+	.	79	3
+	+	120	62
+	+	118	1
+	+	120	61
+	+	124	0
+	+	122	0
+	+	123	73
+	+	122	21
+	+	123	45
+	+	122	67
+	+	123	67
+	+	121	67
+	+	122	67
+	+	125	33
+	+	129	0
+	+	128	1
+	+	128	4
+	+	128	45
+	+	122	67
+	+	95	0
+	+	96	24
+	+	99	0
+	+	127	29
+	+	126	28
+	+	125	33
+	+	119	4
+	+	124	1
+	+	129	0
+	+	126	2
+	+	127	4
+	+	128	4
+	+	128	0
+	+	127	21
+	+	129	33
+	+	131	34
+	+	125	19
+	+	131	60
+	+	114	41
+	+	96	16
+	+	114	33
+	+	114	60
+	+	116	27
+	+	126	0
+	+	132	71
+	+	136	0
+	+	116	14
+	+	132	0
+	+	79	20
+	+	80	20
+	+	81	20
+	+	79	1
+	+	80	1
+	+	81	52
+	+	83	24
+	+	84	0
+	+	85	0
+	+	84	17
+	+	85	12
+	+	84	12
+	+	83	5
+	+	84	5
+	+	85	5
+	+	79	0
+	+	80	0
+	+	81	3
+	+	80	3
+	+	79	3
+
 > ~/librealsense/examples/pointcloud/rs-pointcloud.cpp
-	*	1564673366	0
-	"	7	1
-	.	7	1
-	+	7	1
+	*	1566410558	0
+	"	150	75
+	^	150	76
+	.	150	75
+	+	58	25
+	+	63	0
+	+	79	0
+	+	139	0
+	+	79	0
+	+	20	22
+	+	58	48
+	+	78	23
+	+	58	24
+	+	20	21
+	+	85	0
+	+	50	0
+	+	85	0
+	+	50	0
+	+	46	0
+	+	79	7
+	+	80	7
+	+	44	0
+	+	45	0
+	+	81	3
+	+	82	7
+	+	83	2
+	+	85	3
+	+	86	3
+	+	87	3
+	+	21	47
+	+	61	0
+	+	60	18
+	+	58	9
+	+	61	21
+	+	145	0
+	+	145	18
+	+	171	28
+	+	172	28
+	+	173	28
+	+	169	20
+	+	167	32
+	+	174	19
+	+	179	0
+	+	165	16
+	+	152	10
+	+	153	10
+	+	154	10
+	+	177	16
+	+	176	25
+	+	183	3
+	+	184	3
+	+	185	3
+	+	189	3
+	+	191	3
+	+	197	0
+	+	193	3
+	+	194	39
+	+	175	24
+	+	158	0
+	+	180	39
+	+	157	6
+	+	171	46
+	+	172	47
+	+	173	47
+	+	175	24
+	+	167	34
+	+	171	48
+	+	172	49
+	+	173	49
+	+	171	49
+	+	172	50
+	+	173	55
+	+	172	55
+	+	171	54
+	+	167	40
+	+	165	25
+	+	145	0
+	+	165	0
+	+	166	22
+	+	175	21
+	+	166	21
+	+	172	36
+	+	172	0
+	+	166	23
+	+	150	70
+	+	209	39
+	+	209	3
+	+	209	78
+	+	209	2
+	+	211	3
+	+	150	76
+	+	198	75
+	+	150	65
+	+	180	0
+	+	181	2
+	+	180	1
+	+	199	2
+	+	200	79
+	+	210	0
+	+	209	3
+	+	210	39
+	+	150	54
+	+	200	52
+	+	150	75
+
+> ~/lcm-types/rs_pointcloud_t.lcm
+	*	1566408041	0
+	"	5	0
+	^	3	22
+	.	3	21
+	+	3	21
+
+> ~/.vimrc
+	*	1566407539	0
+	"	8	0
+	^	47	25
+	.	47	25
+	+	1	0
+	+	50	0
+	+	47	25
+
+> ~/lcm-types/cpp/rs_pointcloud_t.hpp
+	*	1566394717	0
+	"	15	0
+
+> ~/scripts/make_types.sh
+	*	1566394686	0
+	"	17	0
 
 > ~/librealsense/CMakeLists.txt
-	*	1564672542	0
-	"	6	0
+	*	1566393663	0
+	"	74	15
+
+> ~/librealsense/examples/example.hpp
+	*	1566392999	0
+	"	625	0
+
+> ~/librealsense/examples/pointcloud/CMakeLists.txt
+	*	1566392951	0
+	"	19	14
+
+> ~/librealsense/CMake/include_os.cmake
+	*	1566392863	0
+	"	11	4
+
+> ~/librealsense/examples/CMakeLists.txt
+	*	1566392811	0
+	"	27	2
+	^	38	1
+	.	38	0
+	+	25	0
+	+	26	0
+	+	27	0
+	+	28	0
+	+	29	0
+	+	31	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	36	0
+	+	37	0
+	+	38	0
+
+> ~/.bashrc
+	*	1566392089	0
+	"	27	0
+	^	133	33
+	.	1	0
+	+	124	35
+	+	127	0
+	+	128	0
+	+	167	28
+	+	133	32
+	+	1	0
+
+> /home/another/dotfiles/install-vim
+	*	1566391760	0
+	"	16	0
+
+> /home/another/dotfiles/vimrc
+	*	1566391718	0
+	"	1	0
+
+> ~/.tmux.conf
+	*	1566391662	0
+	"	29	0
+	.	29	0
+	+	1	0
+	+	29	0
+
+> /home/another/dotfiles/tmux.conf
+	*	1566391512	0
+	"	1	0
+
+> /home/another/dotfiles/bashrc
+	*	1566391351	0
+	"	60	0
+
+> ~/.git/config
+	*	1566326676	0
+	"	1	0
 
 > ~/catkin_ws/src/loam_republiser.cpp
 	*	1562614480	0
